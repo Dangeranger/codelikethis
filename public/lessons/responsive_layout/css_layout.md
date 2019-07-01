@@ -161,12 +161,22 @@ Now the caption can be as wide as its parent (the wrapper), since its parent is 
 
 * For a long time, floats were the backbone of page layout using CSS.
 * However, recent developments have allowed developers to use new CSS properties to achieve the same result, and much more.
-* Because of this, the `float` property should only be used for wrapping text around images, which was its original purpose - gone are the days of CSS layout using floats.
+* Because of this, the `float** property should only be used for wrapping text around images, which was its original purpose - gone are the days of CSS layout using floats.
+
+
+# LAB: CSS Selector Diner
+
+* CSS Diner
+  * https://flukeout.github.io/
 
 # LAB: Learn CSS Layout
 
-Do these tutorials:
+* Read the following tutorial on CSS layouts
+  * https://learnlayout.com/
 
-https://learn.shayhowe.com/html-css/
+# LAB: Getting to Know CSS
 
-[Learn CSS Layout](http://learnlayout.com/position.html)
+## Optional
+
+* Shaw Howe - Getting to Know CSS
+  * https://learn.shayhowe.com/html-css/getting-to-know-css/
