@@ -88,6 +88,24 @@ console.log(element)
 
 <https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById>
 
+# LAB: Find and Modify an Element
+
+- Find the `<p>` within the `<div>` element
+- Update the `<p>` element's `textContent` property to `I CAN CHANGE HTML WITH JAVASCRIPT`
+
+```js
+<div>
+  <p>
+    This is the old content!
+  </p>
+</div>
+```
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="first-dom-script" src="//codepen.io/Dangeranger/embed/MMjevW/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/Dangeranger/pen/MMjevW/'>first-dom-script</a> by Joshua Burke
+  (<a href='https://codepen.io/Dangeranger'>@Dangeranger</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 # Finding an Element by CSS Selector
 
 ```js

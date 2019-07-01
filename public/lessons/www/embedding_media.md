@@ -62,7 +62,7 @@ Or, if the user moves their location on an embedded Google Map, your app could b
 </iframe>
 ```
 
-<iframe height='300' width='400' src='http://example.com'></iframe>
+<iframe height='300' width='400' src='https://example.com'></iframe>
 
 
 ### More Information
