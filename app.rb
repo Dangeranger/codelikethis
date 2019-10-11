@@ -34,6 +34,7 @@ class App < Sinatra::Base
   include Erector::Mixin
   include AppHelpers
 
+  set :static, false
   set :static_cache_control, [:public, :max_age => 300]
 
   before do
@@ -65,6 +66,19 @@ class App < Sinatra::Base
     def view
       TracksSidebar.new(tracks: @site.tracks, current: nil)
     end
+  end
+
+  get '/images/:image' do
+    require 'digest'
+    cache_control :public, :must_revalidate, :max_age => 60 * 60 * 24
+    path = File.join(here, "public", "images", params['image'])
+    file = File.open(path)
+    content = file.read
+    tag = Digest::SHA256.hexdigest content
+    puts file.mtime
+    puts tag
+    etag tag
+    send_file(path)
   end
 
   get '/favicon.ico' do
